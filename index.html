@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Sharvil Antil - A New Adventure</title>
+    <meta name="description" content="Welcome to the official website of Sharvil Antil (षार्विल अंतिल). Follow his journey, little milestones, and big adventures.">
+    <meta name="keywords" content="Sharvil Antil, षार्विल अंतिल, Sharvil Antil personal website, baby milestones, Sharvil's journey">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <style>
+        /* --- Baby Theme - Soft & Playful --- */
+        :root {
+            --primary-color: #89cff0;  /* Baby Blue */
+            --secondary-color: #f9a8d4; /* Soft Pink */
+            --text-color: #555;       /* Soft Dark Gray */
+            --bg-light: #fdfdfd;      /* Clean White */
+            --bg-soft: #f0f8ff;       /* Alice Blue (Very Light) */
+            --white: #ffffff;
+            
+            --font-heading: 'Nunito', sans-serif;
+            --font-body: 'Open Sans', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--bg-soft); /* Soft background */
+            color: var(--text-color);
+            line-height: 1.7;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* --- Header --- */
+        header {
+            background-color: var(--white);
+            padding: 20px 5%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            border-bottom: 3px solid var(--primary-color);
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo h1 {
+            font-family: var(--font-heading);
+            font-weight: 800;
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+
+        main {
+            flex-grow: 1;
+        }
+
+        /* --- Hero Section --- */
+        .hero-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 60px 5%;
+            background-color: var(--primary-color); /* Baby Blue background */
+            color: var(--white);
+        }
+
+        .hero-section h2 {
+            font-family: var(--font-heading);
+            font-size: 3rem;
+            margin-bottom: 15px;
+            font-weight: 800;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            font-weight: 400;
+            max-width: 700px;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+        
+        /* --- Hindi Name --- */
+        .hindi-name-mention {
+            font-size: 1.1rem;
+            color: var(--white);
+            margin-bottom: 30px;
+            padding: 10px 20px;
+            border: 2px dashed var(--white);
+            border-radius: 10px;
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .call-to-action-button {
+            background-color: var(--secondary-color); /* Soft Pink */
+            color: var(--white);
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            box-shadow: 0 8px 20px rgba(249, 168, 212, 0.5);
+            transition: background-color 0.3s, transform 0.3s;
+            display: inline-block;
+        }
+
+        .call-to-action-button:hover {
+            background-color: #f48fb1; /* Darker Pink */
+            transform: translateY(-3px) scale(1.03);
+        }
+        
+        /* --- Content Area --- */
+        .content-area {
+            padding: 70px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-family: var(--font-heading);
+            font-size: 2.5rem;
+            color: var(--text-color);
+            margin-bottom: 50px;
+            position: relative;
+            font-weight: 800;
+        }
+        
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: var(--secondary-color); /* Pink underline */
+            margin: 15px auto 0;
+            border-radius: 2px;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            text-align: left;
+        }
+
+        .grid-item {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+            border-bottom: 4px solid var(--primary-color);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .grid-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        .grid-item h3 {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+        }
+        
+        .grid-item h3 i {
+            margin-right: 12px;
+            color: var(--secondary-color); /* Pink icon */
+            font-size: 1.8rem;
+            width: 30px;
+            text-align: center;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background-color: #6a7a8a; /* Soft, muted blue-gray */
+            color: var(--bg-light);
+            padding: 50px 5%;
+            text-align: center;
+            margin-top: 40px; 
+        }
+        
+        footer h4 {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+
+        .social-links {
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            color: var(--bg-light);
+            text-decoration: none;
+            font-size: 2rem;
+            margin: 0 15px;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .social-links a:hover { 
+            transform: translateY(-5px);
+            color: var(--primary-color); /* Baby Blue hover */
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        /* --- Responsive Design --- */
+        @media (max-width: 768px) {
+            .logo h1 { font-size: 1.8rem; }
+            .hero-section h2 { font-size: 2.5rem; }
+            .hero-section p { font-size: 1.1rem; }
+            .section-title { font-size: 2rem; }
+            .content-grid { grid-template-columns: 1fr; }
+            .social-links a { font-size: 1.8rem; margin: 0 12px; }
+        }
+
+        @media (max-width: 480px) {
+            .logo h1 { font-size: 1.5rem; }
+            .hero-section { padding: 50px 5%; }
+            .hero-section h2 { font-size: 2rem; }
+            .call-to-action-button { padding: 12px 25px; font-size: 1rem; }
+            .social-links a { font-size: 1.6rem; margin: 0 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <h1>SHARVIL ANTIL</h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <h2>Welcome to Sharvil's World!</h2>
+            <p>Follow my little adventures, big smiles, and happy milestones.</p>
+            <p class="hindi-name-mention">
+                Known as: षार्विल अंतिल
+            </p>
+            <a href="#connect" class="call-to-action-button">Connect With Me</a>
+        </section>
+
+        <section class="content-area">
+            <h2 class="section-title">Our Little Star's Story</h2>
+            
+            <div class="content-grid">
+                <div class="grid-item">
+                    <h3><i class="fas fa-baby"></i> Little Steps</h3>
+                    <p>Watching him grow, learn, and explore the world one tiny step at a time.</p>
+                </div>
+                <div class="grid-item">
+                    <h3><i class="fas fa-hand-sparkles"></i> Big Smiles</h3>
+                    <p>Collecting happy moments and all the little things that make him smile.</p>
+                </div>
+                <div class="grid-item">
+                    <h3><i class="fas fa-camera-retro"></i> Fun Memories</h3>
+                    <p>Celebrating every milestone and creating memories that will last a lifetime.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="connect">
+        <h4>Stay Connected!</h4>
+        <div class="social-links">
+            <a href="https://facebook.com/sharvilantil" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com/sharvilantil" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/sharvilantil" target="_blank" title="X / Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://snapchat.com/add/sharvilantil" target="_blank" title="Snapchat"><i class="fab fa-snapchat-ghost"></i></a>
+            <a href="https://threads.net/@sharvilantil" target="_blank" title="Threads"><i class="fab fa-threads"></i></a>
+            <a href="https://linkedin.com/in/sharvilantil" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://pinterest.com/sharvilantil" target="_blank" title="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+            <a href="https://youtube.com/sharvilantil" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://reddit.com/user/sharvilantil" target="_blank" title="Reddit"><i class="fab fa-reddit-alien"></i></a>
+        </div>
+        <p>Follow our happy journey. &copy; <span id="current-year"></span> Sharvil Antil.</p>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
